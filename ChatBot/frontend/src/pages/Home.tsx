@@ -30,8 +30,8 @@ const Home = () => {
                     }}
                 >
                     <img
-                        src="robot.png"
-                        alt="robot"
+                        src="learn-german.jpg"
+                        alt="german"
                         style={{ width: "200px", margin: "auto" }}
                     />
                     <img

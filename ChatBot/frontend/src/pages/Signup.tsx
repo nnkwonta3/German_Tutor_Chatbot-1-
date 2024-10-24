@@ -78,10 +78,11 @@ const Signup = () => {
                                 mt: 2,
                                 width: "400px",
                                 borderRadius: 2,
-                                bgcolor: "#00fffc",
+                                color: "#1B1212",
+                                bgcolor: "#8B0000",
                                 ":hover": {
-                                    bgcolor: "white",
-                                    color: "black",
+                                    bgcolor: "#1B1212",
+                                    color: "#8B0000",
                                 },
                             }}
                             endIcon={<IoIosLogIn />}

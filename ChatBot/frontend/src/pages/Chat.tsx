@@ -79,53 +79,24 @@ const Chat = () => {
                     flexDirection: "column",
                 }}
             >
-                <Box
+                <Button
+                    onClick={handleDeleteChats}
                     sx={{
-                        display: "flex",
-                        width: "100%",
-                        height: "30vh",
-                        bgcolor: "rgb(17,29,39)",
-                        borderRadius: 5,
-                        flexDirection: "column",
-                        mx: 3,
+                        width: "200px",
+                        my: "10",
+                        color: "#1B1212",
+                        fontWeight: "700",
+                        borderRadius: 3,
+                        mx: "auto",
+                        bgcolor: "#8B0000",
+                        ":hover": {
+                            bgcolor: red.A400,
+                        },
                     }}
                 >
-                    <Avatar
-                        sx={{
-                            mx: "auto",
-                            my: 2,
-                            bgcolor: "white",
-                            color: "black",
-                            fontWeight: 700,
-                        }}
-                    >
-                        {auth?.user?.name[0]}
-                        {auth?.user?.name.split(" ")[1][0]}
-                    </Avatar>
-                    <Typography sx={{ mx: "auto", fontFamily: "work sans" }}>
-                        You are talking to a ChatBOT
-                    </Typography>
-                    <Typography sx={{ mx: "auto", fontFamily: "work sans", my: 4, p: 3 }}>
-                        Ask me anything about German, I can help you!
-                    </Typography>
-                    <Button
-                        onClick={handleDeleteChats}
-                        sx={{
-                            width: "200px",
-                            my: "auto",
-                            color: "white",
-                            fontWeight: "700",
-                            borderRadius: 3,
-                            mx: "auto",
-                            bgcolor: red[300],
-                            ":hover": {
-                                bgcolor: red.A400,
-                            },
-                        }}
-                    >
-                        Clear Conversation
-                    </Button>
-                </Box>
+                    Clear Conversation
+                </Button>
+
             </Box>
             <Box
                 sx={{
@@ -144,7 +115,7 @@ const Chat = () => {
                         fontWeight: "600",
                     }}
                 >
-                    Friedrich, Ihr Deutsch-KI-Lehrer
+                    Friedrich, Your German Tutor
                 </Typography>
                 <Box
                     sx={{
@@ -152,6 +123,7 @@ const Chat = () => {
                         height: "60vh",
                         borderRadius: 3,
                         mx: "auto",
+                        bgColor: "transparent",
                         display: "flex",
                         flexDirection: "column",
                         overflow: "scroll",
@@ -169,7 +141,7 @@ const Chat = () => {
                     style={{
                         width: "100%",
                         borderRadius: 8,
-                        backgroundColor: "rgb(17,27,39)",
+                        backgroundColor: "#8B0000",
                         display: "flex",
                         margin: "auto",
                     }}
@@ -180,7 +152,7 @@ const Chat = () => {
                         type="text"
                         style={{
                             width: "100%",
-                            backgroundColor: "transparent",
+                            backgroundColor: "#1B1212",
                             padding: "30px",
                             border: "none",
                             outline: "none",

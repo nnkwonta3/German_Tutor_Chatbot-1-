@@ -45,11 +45,11 @@ const ChatItem = ({content, role,}: {
             }}
         >
             <Avatar sx={{ ml: "0" }}>
-                <img src="openai.png" alt="openai" width={"30px"} />
+                <img src="german-icon.jpg" alt="german-icon" width={"30px"} />
             </Avatar>
             <Box>
                 {!messageBlocks && (
-                    <Typography sx={{ fontSize: "20px" }}>{content}</Typography>
+                    <Typography sx={{ fontSize: "25px" }}>{content}</Typography>
                 )}
                 {messageBlocks &&
                     messageBlocks.length &&
@@ -69,18 +69,18 @@ const ChatItem = ({content, role,}: {
             sx={{
                 display: "flex",
                 p: 2,
-                bgcolor: "#004d56",
+                bgcolor: "#1B1212",
                 gap: 2,
                 borderRadius: 2,
             }}
         >
-            <Avatar sx={{ ml: "0", bgcolor: "black", color: "white" }}>
+            <Avatar sx={{ ml: "0", bgcolor: "#097969", color: "#1B1212" }}>
                 {auth?.user?.name[0]}
                 {auth?.user?.name.split(" ")[1][0]}
             </Avatar>
             <Box>
                 {!messageBlocks && (
-                    <Typography sx={{ fontSize: "20px" }}>{content}</Typography>
+                    <Typography sx={{  fontSize: "25px" }}>{content}</Typography>
                 )}
                 {messageBlocks &&
                     messageBlocks.length &&
